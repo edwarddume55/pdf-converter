@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Converter Web app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+    <!--image display-->
+    <img src="" alt="" id="showing">
+    <!--button-->
+    <div class="button">
+        <div class="upload">
+            <input type="file" onchange="loadFile(event)" name="" accept=".png, .jpg, .jpeg, .docx, .xlxs, .doc, .html, .xml"  >Upload File
+        </div>
+        <button onclick="pdfDown()">Download</button>
+    </div>
+   </div> 
+   <!--jspdf cdn-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+   <!--javascript-->
+   <script src="script.js"></script>
+</body>
+</html>
